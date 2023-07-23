@@ -1,0 +1,342 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+
+:root {
+    --cor-background: #19191a;
+    --cor-background-secundario: #dedcde;
+    --cor-fonte-primaria: #000000;
+    --cor-fonte-secundaria: #dedcde;
+    --fonte-principal: 'Montserrat', sans-serif;
+    --fonte-secundaria: 'Krona One', sans-serif;  
+    --font-size-titulo: 3.8vh;
+    --font-size-texto: 2.3vh;
+    --font-size-subtitulo: 2.6vh;
+    --font-size-box: 2vh;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    
+    background-color: var(--cor-background);
+    color:var(--cor-fonte-primaria);
+    font-family: var(--fonte-principal);
+    font-size: 1rem;
+    margin: 1em 10em;
+    
+}
+
+
+.cabecalho__quadrado {
+    background-color: var(--cor-background-secundario) ; 
+    text-align: center;
+    align-items: center;
+    border-radius: 30px;
+    border: 2px solid;
+    padding: 2%;
+    margin: 2% 0;
+    display:flex;
+    gap: 100px;
+    height: 100%;
+        
+}
+
+.cabecalho__quadrado__imagem {
+    width: 32vh;
+    border-radius: 30px;
+    border:10px solid;
+    overflow: hidden;
+}
+
+.cabecalho__titulo {
+    /* font-size: 3.1rem; */
+    font-size: 4vh;
+    font-family: var(--fonte-secundaria);
+    color: var(--cor-fonte-primaria);
+    text-align: left;
+}
+
+.cabecalho__texto{
+    margin: 0.5em 0;
+    margin-bottom: 2em;
+    /* font-size: 2rem; */
+    font-size: 3vh;
+    text-align: left;
+}
+
+.cabecalho__texto2{
+    margin: 0.5em 0;
+    color: var(--cor-fonte-primaria);
+    /* font-size: 1.4rem; */
+    font-size: 2vh;
+    
+}
+
+.cabecalho__lista {
+    list-style-type: none;
+    text-align: left;
+    color: var(--cor-fonte-secundaria);
+}
+
+.cabecalho__lista2 {
+    display: flex;
+    list-style-type: none;
+    gap: 40px;
+    margin-top: 1.5em;
+}
+
+.cabecalho__lista2__links{
+    width: 6vh;
+}
+
+.cabecalho__lista2__links:hover {
+    background-color: #FFFFFF;
+}
+
+.conteudo {
+    color: var(--cor-fonte-secundaria);
+    /* font-size: 32px; */
+    height: 100%;
+    width: 100%;
+}
+
+.conteudo__perfil {
+    margin-bottom: 1em;
+}
+
+.conteudo__perfil__titulo {
+    margin-bottom: 1em;
+    font-size: var(--font-size-titulo);
+}
+
+.conteudo__perfil__texto {
+    font-size: var(--font-size-texto);
+    margin-bottom: 2em;
+    margin: 2em 1em;
+}
+
+.conteudo__perfil__paragrafo1 {
+    margin-bottom: 2em;
+}
+
+.conteudo__perfil__paragrafo2 {
+    margin-bottom: 2em;
+}
+
+.conteudo__experiencia {
+    margin: 2em 2em;
+    font-size: var(--font-size-texto);
+    display:grid;
+    grid-template-columns: 50% 50%;
+    gap: 5%;
+
+}
+
+.conteudo__experiencia__paragrafo {
+    background-color: var(--cor-background-secundario) ;
+    border-radius: 30px;
+    border: 2px solid;
+    color:#000000;
+    padding: 3% 0% 3% 5%;
+    margin-right: 15%;
+    
+        
+}
+
+.conteudo__experiencia__titulo {
+   margin: 1em 1em;
+   font-size: var(--font-size-titulo);
+}
+
+.nome_empresa{
+    font-size: var(--font-size-subtitulo);
+    margin-bottom: 0;
+    list-style-type: none;
+}
+
+.coringa {
+    margin-bottom: 2em;
+    font-size: var(--font-size-box);
+    list-style-type: none;
+}
+
+.conteudo__experiencia__lista {
+    
+    text-align: left;
+    font-size: var(--font-size-box);
+}
+
+.conteudo__experiencia__linha {
+    margin: 0.5em 0;
+        
+}
+
+.conteudo__formacao__titulo{
+    font-size: var(--font-size-titulo);
+    margin-bottom: 1em;
+
+}
+.conteudo__formacao{
+    margin: 2em 1em;
+    font-size: var(--font-size-texto);
+}
+
+
+.conteudo__formacao__lista{
+    font-size: var(--font-size-texto);
+    margin-bottom: 1em;
+    list-style-type: none;
+}
+
+.conteudo__certificacoes {
+    margin: 2em 2em;
+    font-size: var(--font-size-texto);
+}
+
+.conteudo__certificacoes__titulo{
+    margin: 1em 0em;
+    font-size: var(--font-size-titulo);
+}
+
+.conteudo__certificacoes__lista {
+    display: flex;
+    list-style-type: none;
+    text-align: center;
+    align-items: center;
+    gap: 6%;
+    margin-right: 20%;
+    
+}
+
+.conteudo__certificacoes__links{
+    width: 22vh;
+}
+
+.conteudo__certificacoes__links:hover{
+    background-color: #5f5f5f;
+}
+
+.conteudo__cursos{
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+}
+
+.conteudo__cursos__quadrado {
+    background-color: var(--cor-background-secundario) ;
+    border-radius: 30px;
+    border: 2px solid;
+    color:#000000;
+    padding: 3% 0% 3% 8%;
+    margin: 0 5% 10% 0;
+    
+}
+
+.conteudo__cursos__subtitulo{
+    font-size: var(--font-size-subtitulo);
+}
+
+.subtitulo__descricao{
+    margin-bottom: 5%;
+    font-size:var(--font-size-box);
+}
+    
+.conteudo__cursos__cursos{
+    font-size: var(--font-size-box);
+    
+}
+
+.conteudo__cursos__lista{
+    margin-bottom: 2%;
+}
+
+.conteudo__habilidades{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    text-align: center;
+    justify-items: center;
+    margin: 0 10%;
+}
+
+.conteudo__habilidades__titulo{
+    margin: 2em 0em;
+    font-size: var(--font-size-titulo);
+}
+
+.conteudo__habilidades__subtitulo{
+    margin-bottom: 10%;
+    font-size: var(--font-size-subtitulo);
+}
+
+.barra-progresso {
+    background-color: #f1f1f1;
+    height: 2.4vh;
+    width: 44vh;
+    border-radius: 10px;
+    text-align: center;
+    align-items: center;
+    margin-bottom: 5%;
+}
+  
+.nivel-habilidade-redes {
+    background-color:darkturquoise; /* Cor da barra de progresso preenchida */
+    height: 100%;
+    border-radius: 10px;
+    width: 75%;
+       
+}
+
+.nivel-habilidade-programacao {
+    background-color:darkturquoise; /* Cor da barra de progresso preenchida */
+    height: 100%;
+    border-radius: 10px;
+    width: 25%;
+}
+
+.nivel-habilidade-sistemas {
+    background-color:darkturquoise; /* Cor da barra de progresso preenchida */
+    height: 100%;
+    border-radius: 10px;
+    width: 60%;
+}
+
+.nivel-habilidade-sec {
+    background-color:darkturquoise; /* Cor da barra de progresso preenchida */
+    height: 100%;
+    border-radius: 10px;
+    width: 40%;
+}
+
+.nivel-habilidade-analise {
+    background-color:darkturquoise; /* Cor da barra de progresso preenchida */
+    height: 100%;
+    border-radius: 10px;
+    width: 75%;
+}
+
+.nivel-habilidade-equipe {
+    background-color:darkturquoise; /* Cor da barra de progresso preenchida */
+    height: 100%;
+    border-radius: 10px;
+    width: 80%;
+}
+
+.nivel-habilidade-resiliencia {
+    background-color:darkturquoise; /* Cor da barra de progresso preenchida */
+    height: 100%;
+    border-radius: 10px;
+    width: 80%;
+}
+
+.nivel-habilidade-curiosidade {
+    background-color:darkturquoise; /* Cor da barra de progresso preenchida */
+    height: 100%;
+    border-radius: 10px;
+    width: 60%;
+}
+
+.conteudo__habilidades__texto{
+    font-size: var(--font-size-texto);
+}
